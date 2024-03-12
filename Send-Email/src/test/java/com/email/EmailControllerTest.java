@@ -33,7 +33,7 @@ public class EmailControllerTest {
 	
 	@Test
 	public void sendEmailTest() {
-        EmailEntity emailEntity = new EmailEntity("mailtrap@demomailtrap.com", "peculiaritiesoftheworld@gmail.com", "Test Subject", "Test Body");
+        EmailEntity emailEntity = new EmailEntity("mailtrap@demomailtrap.com", "example@gmail.com", "Test Subject", "Test Body");
 
         Mockito.doNothing().when(mailSender).send(Mockito.any(SimpleMailMessage.class));
 
@@ -48,7 +48,7 @@ public class EmailControllerTest {
 	
 	@Test
 	public void sendEmailMailTrap() {
-		EmailEntity emailEntity = new EmailEntity("mailtrap@demomailtrap.com", "peculiaritiesoftheworld@gmail.com", "Test Subject", "Test Body");
+		EmailEntity emailEntity = new EmailEntity("mailtrap@demomailtrap.com", "example@gmail.com", "Test Subject", "Test Body");
 		controller.sendEmail(emailEntity);
 	}
 
