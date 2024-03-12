@@ -1,5 +1,5 @@
 # Email-Sender
-Spring boot application to send email notifications.
+A Spring boot application to send email notifications.
 
 
 To send emails with this application you need to send a JSON post petition with the email configurations to /sendEmail
@@ -14,6 +14,6 @@ JSON example:
 }
 
 
-In aim to send emails with your email you will need to configure the environment variables ${usernameMailtrap} and ${password}. And change the from on the JSON. 
+In aim to send emails with your email you will need to configure the environment variables ${usernameMailtrap} and ${password}. And change the from value of the JSON. 
 
 Mailtrap free service was used to test the functionalitty of the app.
